@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navbar": "/components/navbar/navbar",
+    "items-slider": "/components/items-slider/items-slider",
+    "bottom-navbar": "/components/bottom-navbar/bottom-navbar",
+    "pagination": "mini-antui/es/pagination/index"
+  }
+}

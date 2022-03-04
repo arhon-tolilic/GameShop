@@ -1,0 +1,64 @@
+<view class="container">
+  <view class="navbar-section">
+    <navbar></navbar>
+  </view>
+
+
+  <view class="items-section">
+    <text class="items-slider-header" onTap="onNavigateList">See All</text>
+    <items-slider></items-slider>
+  </view>
+
+
+  <view class="image-section">
+    <button size="default" type="primary">Button</button>
+    <view class="information-container" a:if="{{userInfo}}">
+      <view class="avatar-container">
+        <image mode="scaleToFill" src="{{userInfo.avatar}}"/></view>
+
+      <text>Nickname: {{userInfo.nickName}}</text>
+      <text>City: {{userInfo.city}}</text>
+      <text>Country Code: {{userInfo.countryCode}}</text>
+      <text>Gender: {{userInfo.gender === "m" ? "Male" : "Female"}}</text>
+    </view>
+  </view>
+
+
+  <view class="section-products">
+    <view class="products-container">
+
+      <view class="product-item" a:for="{{products}}" a:for-index="idx" a:for-item="item" key="{{key}}">
+        <image mode="scaleToFill" src="{{item.img}}" class="product-image" data-value="{{key}}"/>
+        <view class="product-description">
+          <view class="product-sale-container">
+            <text class="product-new" a:if="{{item.isNew}}">New</text>
+          </view>
+
+          <text class="product-name"> {{item.name}}</text>
+          <text class="product-price"> P{{item.price}}</text>
+          <text class="product-details" onTap="onNavigateDetails"> More details ></text>
+          <text class="product-button" onTap="onNavigateDetails"> Buy</text>
+        </view>
+
+      </view>
+
+    </view>
+
+    <view class="products-pagination">
+      <pagination mode="icon" total="{{totalPages}}" current="{{limitProducts}}" onChange="paginate" class="pagination"/>
+    </view>
+
+    <view class="slider-container">
+      <text class="slider-header">Partners</text>
+      <view class="slider">
+        <view a:for="{{partners}}" a:for-index="idx" a:for-item="item" key="{{key}}" class="slider-item">
+          <image mode="scaleToFill" src="{{item.img}}" class="slider-image" data-value="{{key}}" />
+          <!--<text class="slider-description">{{item.name}}</text> -->
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+</view>

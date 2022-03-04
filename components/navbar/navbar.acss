@@ -1,0 +1,66 @@
+.navbar-container {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  display: block;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  background-color: #2d2042;
+  color: #fffffe;
+  /* position: fixed; */
+  width: -webkit-fill-available;
+  height: 50px;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8em;
+}
+
+.btn-item {
+  font-weight: bolder;
+  font-size: 1em;
+  margin-left: -1em;
+}
+
+.logo-item {
+  width: 80px;
+  height: 56px;
+  display: block;
+  margin-top: -5px;
+}
+
+.login-text {
+  color: #ffffff;
+  font-size: 0.7em;
+  width: 100%;
+}
+
+.login-border {
+  font-weight: bolder;
+  border: 1px solid #b8c1ec;
+  border-radius: 0.7em;
+  padding: 1em 0.8em;
+  position: relative;
+  margin-right: 0.5em;
+}
+
+.login-border .cart-number {
+  border: 2px solid #d20e56;
+  border-radius: 50%;
+  background: #d20e56;
+  position: absolute;
+  padding: 0.5em 0.7em;
+  top: -5px;
+  right: -20px;
+}
+
+.cart-number text {
+  color: #ffd71f;
+  font-weight: bold;
+}

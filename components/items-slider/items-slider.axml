@@ -1,0 +1,16 @@
+<view class="items-slider-container">
+
+
+  <view class="items-slider-section">
+    <view class="items-slider-description">
+      <!--<text class="items-slider-header">See All</text> -->
+      <!--<text class="items-slider-description">More to look forward to</text> -->
+    </view>
+    <view class="items-slider">
+      <view a:for="{{ads}}" a:for-index="idx" a:for-item="item" key="{{key}}" class="items-slider-item">
+        <image mode="scaleToFill" src="{{item.img}}" class="items-slider-image" data-value="{{key}}"/>
+        <text class="items-slider-description" a:if="{{item.camera}}">{{item.camera.full_name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

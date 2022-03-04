@@ -1,0 +1,17 @@
+<view class="navbar-container">
+  <view class="navigation-bar">
+    <image mode="scaleToFill" src="{{array[0]}}" class="logo-item"/>
+    <view class="login-border" onTap="onGetAuthorize">
+      <view class="cart-number"a:if="{{cartCount}}">
+        <text>{{cartCount}}</text>
+      </view>
+      <text a:if="{{canIUseAuthButton}}" open-type="getAuthorize" onGetAuthorize="onGetAuthorize" onError="onAuthError" scope='userInfo' class="login-text">
+      {{userInfo.nickName || 'Log in'}}
+      </text>
+      <!--<button a:if="{{true}}" open-type="getAuthorize" onGetAuthorize="onGetAuthorize" onError="onAuthError" scope='userInfo'>yo</button> -->
+    </view>
+
+
+  </view>
+
+</view>

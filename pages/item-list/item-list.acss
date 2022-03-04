@@ -1,0 +1,26 @@
+.item-list-container {
+  height: 100%;
+  width: 100%;
+}
+
+.item-image-container {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.item-image {
+  text-align: center;
+  margin: 2em;
+  border-radius: 12px;
+  width: 350px;
+  height: 196px;
+}
+
+.item-list-header {
+  font-weight: bolder;
+  font-size: 1.6em;
+  text-align: center;
+  display: block;
+  padding-top: 1em;
+}

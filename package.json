@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "material-icons": "^1.10.7",
+    "mini-antui": "^0.5.2"
+  }
+}

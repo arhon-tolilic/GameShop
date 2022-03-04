@@ -1,0 +1,24 @@
+<navbar></navbar>
+<view class="container">
+  <view class="product">
+    <view class="product-container">
+      <image mode="scaleToFill" class="product-image" src="https://lh3.googleusercontent.com/_tJ4i5HQOjBUOZkl4Sxc_PoYmxDNAox1S9-KV6r44fkwo42nb1eJlhzJFA6uiUpOL_Lhnr_kvnsco4rvlslDx_st5AeypeoYgrgmkA4=w600"/>
+
+      <view class="product-article">
+        <text class="product-name">Sword</text>
+        <text class="product-price">P285</text>
+        <text class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut a</text>
+      </view>
+    </view>
+  </view>
+  <view class="buttons-container">
+    <view class="count-container">
+      <button size="default" type="default" class="btn reduce-count" onTap="reduceCount">-</button>
+      <button size="default" type="default" class="btn display-count">{{count}}</button>
+      <button size="default" type="default" class="btn add-count" onTap="addCount">+</button>
+    </view>
+    <button size="default" type="primary" class="btn add-cart" onTap="addToCart">Add To Cart</button>
+    <button size="default" type="primary" class="btn buy">Buy</button>
+    <!--<button size="default" type="primary" class="btn buy" onTap="updateNew">Set as New</button> -->
+  </view>
+</view>

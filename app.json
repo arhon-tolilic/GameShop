@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/item-details/item-details",
+    "pages/user-information/user-information",
+    "pages/item-list/item-list"
+  ],
+  "window": {
+    "defaultTitle": "NFT Shop",
+    "usingComponents": {
+      "am-icon": "mini-antui/es/am-icon/index"
+    }
+  }
+}

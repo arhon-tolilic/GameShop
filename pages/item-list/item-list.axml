@@ -1,0 +1,8 @@
+<view class="item-list-container">
+  <text class="item-list-header">Advertisments</text>
+  <view a:for="{{items}}" a:for-index="idx" a:for-item="itemName">
+    <view class="item-image-container">
+      <image mode="scaleToFill" src="{{itemName.img}}" class="item-image"/>
+    </view>
+  </view>
+  <view>

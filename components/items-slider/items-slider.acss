@@ -1,0 +1,65 @@
+/* @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap"; */
+
+.items-slider-container {
+}
+
+.items-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.items-slider {
+  display: flex;
+
+  /* allow for scrolling */
+  overflow-x: auto;
+
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  margin: 0 1em;
+}
+
+.items-slider > view {
+  flex-shrink: 0;
+  width: 250px;
+  height: 135px;
+  text-align: center;
+  /* margin-right: 15px; */
+  /* padding: 1em; */
+
+  border-radius: 0.7em;
+  background: white;
+  opacity: 0.9;
+  margin: 2em 2em;
+
+  background: #eee;
+  box-shadow: 0 8px 8px -4px lightblue;
+}
+
+.items-slider > view > .items-slider-image {
+  width: 250px;
+  height: 135px;
+  border-radius: 12px;
+}
+
+.items-slider-item > .items-slider-description {
+  font-size: 1.3em;
+  margin-top: 0.3em;
+  text-align: left;
+  display: block;
+  color: #2d2042;
+  font-weight: bolder;
+}
+
+.items-slider-description text {
+  display: block;
+}
+
+/* .items-slider-header {
+  margin-top: 1em;
+  margin-left: 3.2em;
+  margin-bottom: -1.4em;
+  color: black;
+  font-weight: bolder;
+} */
